@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso de Bootstrap 4</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/compiler/bootstrap.css">
+    
+    <link rel="stylesheet" href="style/scss/style.css">
+    
+    <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.css">
+
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-gradient-primary">
+        
+        <div class="container">
+
+          <a class="navbar-brand h1 mb-0" href="#">Curso</a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarNav">
+            
+            <ul class="navbar-nav mr-auto">
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Perfil</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Servicos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Depoimentos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Contactos</a>
+              </li>
+        
+            </ul>
+
+            <!-- Menu Dropdwon-->
+            <ul class="navbar-nav ml-auto">
+                
+                <li class="nav-item dropdown">
+                    
+                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" id="navDrop" href="#">
+                            Social
+                        </a>
+                        <div class="dropdown-menu">
+                            <a class="dropdown-item" href="#">Facebook</a>
+                            <a class="dropdown-item" href="#">Twitter</a>
+                            <a class="dropdown-item" href="#">Instagram</a>
+                        </div>
+                
+                </li>
+            </ul>
+
+            <form class="form-inline">
+
+                <input class="form-control ml-4 mr-2" type="search" placeholder="Buscar...">
+                <button class="btn btn-dark">OK</button>
+
+            </form>
+            
+          </div>
+        </div>
+
+      </nav>
+
+    <!-- Caroussel-->
+    <div id="carouselSite" class="carousel slide" data-ride="carousel">
+
+
+        <!-- Indicadores dos slides-->
+        <ol class="carousel-indicators">
+            <li data-target="#carouselSite" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselSite" data-slide-to="1"></li>
+            <li data-target="#carouselSite" data-slide-to="2"></li>
+        </ol>
+        
+        
+        
+        <div class="carousel-inner">
+
+            <div class="carousel-item active">
+                <img src="imgs/tecnologia 1.jpg" class="img-fluid d-block">
+            
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem Ipsum</h1>
+                    <p class="lead">Lorem Ipsum é simplesmente uma simulação de texto</p>
+                </div>
+
+            </div>
+
+            <div class="carousel-item">              
+                <img src="imgs/tecnologia 2.jpg" class="img-fluid  d-block">             
+            
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem Ipsum</h1>
+                    <p class="lead">É um fato conhecido de todos que um leitor se distrairá</p>
+                </div>
+            
+            </div>
+
+            <div class="carousel-item"> 
+                <img src="imgs/tecnologia 3.jpg" class="img-fluid  d-block">
+                
+                <div class="carousel-caption d-none d-md-block">
+                    <h1>Lorem Ipsum</h1>
+                    <p class="lead">conteúdo de texto legível de uma página quando</p>
+                </div>
+            
+            </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselSite" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+            <span class="sr-only">Anterior</span>
+        </a>
+
+        <a class="carousel-control-next" href="#carouselSite" role="button" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+            <span class="sr-only">Proximo</span>
+        </a>
+
+    </div>
+
+      <!-- Scrollspy-->
+      <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 text-center mt-5">
+                <h1 class="display-3"> <i class="fa fa-cogs text-primary" aria-hidden="true"></i> Bem vindo</h1>
+                <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver</p>
+            </div>
+
+        </div>
+
+        <div class="row mb-5">
+
+            <div class="col-sm-6 col-md-4 mb-3">
+
+                <nav id="navbarVertical" class="navbar navbar-light bg-light">
+            
+                    <nav class="nav nav-pills flex-column">
+
+                        <a class="nav-link" href="#item1">Item 1 titulo</a>
+
+                        <nav class="nav nav-pills flex-column">
+
+                            <a class="nav-link ml-3" href="#item1-1">SubtItem 1 titulo</a>
+                            
+                            <a class="nav-link ml-3" href="#item1-2">subItem 2 titulo</a>
+                
+                        </nav>
+
+                        <a class="nav-link my-2" href="#item2">Item 2 titulo</a>
+
+                        <a class="nav-link my-2" href="#item3">Item 3 titulo</a>
+
+                        <nav class="nav nav-pills flex-column">
+
+                            <a class="nav-link ml-3" href="#item3-1">SubtItem de item</a>
+                            
+                            <a class="nav-link ml-3" href="#item3-2">subItem de outros</a>
+                
+                        </nav>
+                    
+                    </nav>
+                </nav>
+
+            </div>
+
+            <div class="col-md-6 col-md-8">
+
+                    <div data-spy="scroll" data-target="#navbarVertical" data-offset="0" class="scrollspySite">
+                            
+                            <h4 id="item1">Titulo 1</h4>
+                            <p>ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+
+                            <h5 id="item1-1">SubTitulo 1-1</h5>
+                            <p>É um fato conhecido de todos que um leitor se distrairá com o conteúdo de texto legível de uma página quando estiver examinando sua diagramação. A vantagem de usar Lorem Ipsum é que ele tem uma distribuição normal de letras, ao contrário de</p>
+
+                            <h5 id="item1-2">SubTitulo 1-2</h5>
+                            <p>quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+                    
+                            <h4 id="item2">Titulo 2</h4>
+                            <p>ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+
+                            <h4 id="item3">Titulo 3</h4>
+                            <p>ipsum' mostra vários websites ainda em sua fase de construção. Várias versões novas surgiram ao longo dos anos, eventualmente por acidente, e às vezes de propósito (injetando humor, e coisas do gênero).</p>
+
+                            <h5 id="item3-1">SubTitulo 3-1</h5>
+                            <p>quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+
+                            <h5 id="item3-2">SubTitulo 3-2</h5>
+                            <p>quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>
+
+
+                    </div>
+            </div>
+
+        </div>
+
+        <!-- Cards-->
+
+        <div class="row justify-content">
+
+            <div class="col-sm-6 col-md-4">
+
+                <div class="card mb-5">
+
+                    <img class="card-img-top" src="imgs/tecnologia 1.jpg">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Card 1 titulo</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo card 1</h6>
+
+                        <p class="card-text">vezes de propósito injetando humor, e coi</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> mais recentemente quando </li>
+                        <li class="list-group-item"> mais recentemente quando </li>
+                        <li class="list-group-item"> mais recentemente quando </li>
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="" class="card-link" data-toggle="modal" data-target="#siteModal">Done</a>
+                        <a href="" class="card-link">para fazer um livro de modelos</a>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        a de um texto legível. Muit
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+
+                <div class="card mb-5">
+
+                    <img class="card-img-top" src="imgs/tecnologia 2.jpg">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Card 2 titulo</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo card 2</h6>
+
+                        <p class="card-text">vezes de propósito injetando humor, e coi</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> mais recentemente quando </li>
+                        <li class="list-group-item"> mais recentemente quando </li>
+                        <li class="list-group-item"> mais recentemente quando </li>
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="" class="card-link">Done</a>
+                        <a href="" class="card-link">para fazer um livro de modelos</a>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        a de um texto legível. Muit
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-sm-6 col-md-4">
+
+                <div class="card mb-5">
+
+                    <img class="card-img-top" src="imgs/tecnologia 3.jpg">
+
+                    <div class="card-body">
+                        <h4 class="card-title">Card 3 titulo</h4>
+                        <h6 class="card-subtitle mb-2 text-muted">Subtitulo card 3</h6>
+
+                        <p class="card-text">vezes de propósito injetando humor, e coi</p>
+                    </div>
+
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"> mais recentemente quando </li>
+                        <li class="list-group-item"> mais recentemente quando </li>
+                        <li class="list-group-item"> mais recentemente quando </li>
+                    </ul>
+
+                    <div class="card-body">
+                        <a href="" class="card-link">Done</a>
+                        <a href="" class="card-link">para fazer um livro de modelos</a>
+                    </div>
+
+                    <div class="card-footer text-muted">
+                        a de um texto legível. Muit
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </div>
+
+    </div>
+
+    <!-- Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 text-center">
+                        <h1 class="display-4"> <i class="fa fa-video-camera text-primary mr-3" aria-hidden="true"></i>Titulo Jumbo</h1>
+                        <p class="lead">great exploreappiness. No</p>
+                        <hr>
+                </div>
+            </div>
+        
+
+        <div class="row">
+
+            <div class="col-12">
+
+                <ul class="nav nav-pills justify-content-center mb-4" id="pills-nav" role="tablist">
+
+                    <li class="nav-item">
+                        <a class="nav-link active" id="nav-pills-01" data-toggle="pill" href="#nav-item-01">Menu 1</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-pills-02" data-toggle="pill" href="#nav-item-02">Menu 2</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" id="nav-pills-03" data-toggle="pill" href="#nav-item-03">Menu 3</a>
+                    </li>
+
+                </ul>
+
+                <div class="tab-content" id="nav-pills-content">
+
+                    <div class="tab-pane fade show active" id="nav-item-01" role="tabpanel">
+                        
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mdBYIe9_fMo" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <p>require('bootstrap') will load all of Bootstrap jQuery plugins onto the jQuery object. The bootstrap module itself does not export anything. You can manually load Bootstrap jQuery plugins individually by loading the /js/*.js files under the package top-level directory.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-item-02" role="tabpanel">
+                    
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mdBYIe9_fMo" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <p>require('bootstrap') will load all of Bootstrap jQuery plugins onto the jQuery object. The bootstrap module itself does not export anything. You can manually load Bootstrap jQuery plugins individually by loading the /js/*.js files under the package top-level directory.</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="tab-pane fade" id="nav-item-03" role="tabpanel">
+
+                        <div class="row">
+
+                            <div class="col-sm-6">
+
+                                    <div class="embed-responsive embed-responsive-16by9">
+                                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/mdBYIe9_fMo" allowfullscreen></iframe>
+                                    </div>
+                            </div>
+
+                            <div class="col-sm-6">
+                                <p>require('bootstrap') will load all of Bootstrap jQuery plugins onto the jQuery object. The bootstrap module itself does not export anything. You can manually load Bootstrap jQuery plugins individually by loading the /js/*.js files under the package top-level directory.</p>
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <!-- Formulario -->
+
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-12 text-center my-2">
+                <h1 class="display-4"> <i class="fa fa-paper-plane text-primary" area-hidden="true"></i> Envia Uma Mensagem</h1>
+            </div>
+
+        </div>
+
+        <div class="row justify-content-center mb-5">
+
+            <div class="col-sm-12 col-md-10 col-lg-8">
+                
+                <form>
+
+                    <div class="form-row">
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="nome">Nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Insira seu nome">
+
+                        </div>
+
+                        <div class="form-group col-sm-6">
+
+                            <label for="sobrenome">Sobrenome</label>
+                            <input type="text" class="form-control" id="sobrenome" placeholder="Insira o sobrenome">
+
+                        </div>
+
+                        <div class="form-group col-sm-12">
+
+                            <label for="endereco">Endereco</label>
+                            <input type="text" class="form-control" id="endereco" placeholder="Insira o endereco">
+
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label for="cidade">Cidade</label>
+                            <input type="text" class="form-control" id="cidade" placeholder="Insira a cidade">
+
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label for="provincia">Selecione a Provincia</label>
+                            <select name="provincia" id="provincia" class="form-control">
+                                <option>Escola..</option>
+                                <option value="Maputo">Maputo</option>
+                                <option value="Sofala">Sofala</option>
+                                <option value="Nampula">Nampula</option>
+                                
+                            </select>
+
+                        </div>
+
+                        <div class="form-group col-sm-4">
+
+                            <label for="bilhete">Bilhete de Identidade</label>
+                            <input type="text" class="form-control" id="bilhete" placeholder="Insira o numero de BI">
+
+                        </div>
+
+                        <div class="form-group col-sm-12">
+
+                            <div class="form-check">
+
+                                <label for="form-check-label">
+
+                                    <input class="form-check-input" type="checkbox"> Receber novidades por email
+                                
+                                </label>
+                            
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                            
+                            <a tabindex="0" class="btn btn-secondary ml-2" role="button" data-toggle="popover" data-placement="right"
+                            data-trigger="focus" title="Testanto o popoer" data-content="o conteudo de popover fica aqui">Ajuda</a>
+
+                        </div>
+
+                    </div>
+
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <!-- Footer -->
+
+        <div class="row">
+
+            <div class="col-12 mb-3"><hr></div>
+
+                <div class="col-sm-4">
+
+                    <h3>Curso</h3>
+
+                    <p>Ao contrário do que se acredita, Lorem Ipsum não é simplesmente um texto randômico. Com mais de 2000 anos, suas raízes podem ser encontradas em uma </p>
+
+                </div>
+
+                <div class="col-sm-4">
+                    
+                    <h3>Menu</h3>
+
+                    <div class="list-group text-center">
+
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Perfil</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Servicos</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Depoimentos</a>
+                        <a href="#" class="list-group-item list-group-item-action list-group-item-primary">Contactos</a>
+
+
+                    </div>
+
+                </div>
+
+                <div class="col-sm-4">
+
+                    <h3>Social</h3>
+
+                    <div class="btn-group-vertical btn-block btn-group-lg" role="group">
+
+                        <a class="btn btn-outline-primary" href="#"> <i class="fa fa-facebook"></i> Facebook</a>
+                        <a class="btn btn-outline-info" href="#"><i class="fa fa-twitter"></i> Twitter</a>
+                        <a class="btn btn-outline-warning" href="#"><i class="fa fa-instagram"></i> Instagram</a>
+
+                    </div>
+
+                </div>
+
+                <div class="col-12 mt-5">
+
+                    <blockquote class="blockquote text-center">
+
+                        <p class="mb-0">O sucesso so e garantido com esforco, dedicacao, nunca desista</p>
+                        <footer class="blockquote-footer"> Umeid Ijate <cite title="titulo">Fundador do Site</cite> </footer>
+
+                    </blockquote>
+
+                </div>
+
+            
+
+        </div>
+
+    </div>
+
+
+
+    <!-- Modal -->
+
+    <div class="modal fade" id="siteModal" tabindex="-1" role="dialog">
+        
+        <div class="modal-dialog modal-lg" role="document">
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+
+                    <h5 class="modal-title">Titulo Modal 1</h5>
+
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+
+                </div>
+
+                <div class="modal-body">
+                  
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-6">
+                                <h5>Exemplo 1</h5>
+                                <p> est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                            </div>
+
+                            <div class="col-6">
+                                <h5>Exemplo 2</h5>
+                                <p> est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"</p>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    
+                </div>
+
+                <div class="modal-footer">
+                        <button type="button" class="btn btn-danger" data-dismiss="modal">Fechar</button>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    
+    <script>
+
+        $(function (){
+
+            $('[data-toggle="popover"]').popover();
+
+        })
+
+    </script>
+
+</body>
+
+
+</html>
